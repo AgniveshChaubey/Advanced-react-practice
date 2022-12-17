@@ -1,14 +1,12 @@
 import React from 'react'
 
-import React from 'react'
-
 const DesertList = (props) => {
   return (
     <ul>
-        <li>`${dessertName} - ${dessertCalories} cal`</li>
+        <li>{`${props.desertName} - ${props.desertCalories} cal`}</li>
     </ul>
   )
 }
 
-export default DesertList
+export default DesertList;
 
