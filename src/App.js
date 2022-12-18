@@ -1,5 +1,5 @@
 import './App.css';
-import DessertList from './DessertList';
+import DessertList from './components/DessertList';
 
 function App() {
   const data = [
