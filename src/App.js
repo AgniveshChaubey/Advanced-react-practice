@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import DesertList from './DesertList';
+import DessertList from './DessertList';
 
 function App() {
   const data = [
     {
-      desertName : 'a',
-      desertCalories :100,
+      name : 'a',
+      calories :100,
       createdAt : 'Vapi'
     },
     {
@@ -18,11 +17,11 @@ function App() {
       name : 'c',
       calories :300,
       createdAt : 'Vadodara'
-    },
+    }
   ]
 
   return (
-    <DesertList data={data} />
+    <DessertList data={data} />
   );
 }
 
