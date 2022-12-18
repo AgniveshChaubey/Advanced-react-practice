@@ -1,5 +1,6 @@
 import './App.css';
 import DessertList from './components/DessertList';
+import { FeedbackForm } from './components/FeedbackForm';
 import { Form } from './components/Form';
 
 function App() {
@@ -26,8 +27,9 @@ function App() {
 
   return (
     <>
-      <DessertList data={data} />
+      {/* <DessertList data={data} /> */}
       <Form />
+      <FeedbackForm />
     </>
   );
 }
