@@ -1,23 +1,39 @@
 import React, { useRef, useState } from 'react'
 
 export const Form = () => {
-    const [value, setValue] = useState("");
+    const [name, setName] = useState("");
 
     // const handleSubmit = () => {
     //     const inputValue = inputRef.current.value;
     // }
     const handleChange = (e) => {
-        return setValue(e.target.value)
+        return setName(e.target.value)
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setName("");
+        console.log("form submitted")
     }
 
     return (
-        <form >
-            Form
-            <input
-                type="text"
-                value={value}
-                onChange={handleChange}
-            />
+        <form onSubmit={handleSubmit}>
+            <fieldset>
+                <div className='field'>
+                    <label htmlFor="name"> Name : </label>
+                    <input
+                        id='name'
+                        type="text"
+                        placeholder='Name'
+                        name='name'
+                        value={name}
+                        onChange={handleChange}
+                    />
+                </div>
+                <button disabled={!name} type='submit'>
+                    Submit
+                </button>
+            </fieldset>
         </form>
     );
 };
