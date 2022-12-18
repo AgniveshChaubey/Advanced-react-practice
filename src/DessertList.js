@@ -8,7 +8,7 @@ const DessertList = (props) => {
         })
         .map((dessert) => {
             return (
-                <li>
+                <li key={dessert.sno}>
                     {dessert.name} - {dessert.calories} cal
                 </li>
             );
