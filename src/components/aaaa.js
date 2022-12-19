@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import { useState } from "react";
 import { validateEmail } from "./utils";
 
@@ -8,7 +8,7 @@ const PasswordErrorMessage = () => {
     );
 };
 
-function App() {
+function Appp() {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
@@ -78,4 +78,4 @@ function App() {
     );
 }
 
-export default App;
+export default Appp;
