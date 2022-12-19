@@ -2,6 +2,7 @@ import './App.css';
 import DessertList from './components/DessertList';
 import { FeedbackForm } from './components/FeedbackForm';
 import { Form } from './components/Form';
+import { RegistrationForm } from './components/RegistrationForm';
 
 function App() {
   const data = [
@@ -28,8 +29,9 @@ function App() {
   return (
     <>
       {/* <DessertList data={data} /> */}
-      <Form />
-      <FeedbackForm />
+      {/* <Form /> */}
+      {/* <FeedbackForm /> */}
+      <RegistrationForm />
     </>
   );
 }
