@@ -3,6 +3,7 @@ import Switch from './Switch';
 import { ThemeProvider, useTheme } from './components/ThemeContext';
 import Test from './Test';
 import { ProgressGoals } from './components/ProgressGoals';
+import GiftCardPage from './components/GiftCardPage';
 // import Appp from './components/aaaa';
 // import DessertList from './components/DessertList';
 // import { FeedbackForm } from './components/FeedbackForm';
@@ -106,7 +107,8 @@ function App() {
       {/* <Header />
       <Page /> */}
       {/* <Test /> */}
-      <ProgressGoals />
+      {/* <ProgressGoals /> */}
+      <GiftCardPage />
     </div>
   );
 }
