@@ -1,7 +1,7 @@
 import './App.css';
 import Switch from './Switch';
 import { ThemeProvider, useTheme } from './components/ThemeContext';
-import Test from './Test'; 
+import Test from './Test';
 import { ProgressGoals } from './components/ProgressGoals';
 // import Appp from './components/aaaa';
 // import DessertList from './components/DessertList';
@@ -107,7 +107,6 @@ function App() {
       <Page /> */}
       {/* <Test /> */}
       <ProgressGoals />
-
     </div>
   );
 }

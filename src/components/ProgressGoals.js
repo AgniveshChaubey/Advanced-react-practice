@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
 
 function GoalForm(props) {
-    const [formData, setFormData] = useState({ goal:"", by:"" })
+    const [formData, setFormData] = useState({ goal: "", by: "" })
 
     function changeHandler(e) {
-        setFormData({ ...formData, [e.target.value]: e.target.value })
-    }
+        setFormData({ ...formData, [e.target.name]: e.target.value })
+    };
 
     function submitHandler(e) {
         e.preventDefault();
         props.onAdd(formData);
         setFormData({ goal: "", by: "" });
-    }
+    };
 
     return (
         <>
@@ -22,35 +22,35 @@ function GoalForm(props) {
                 <button>Submit Goal</button>
             </form>
         </>
-    )
-}
+    );
+};
 
 
 function ListOfGoals(props) {
     return (
         <ul>
             {props.allGoals.map((g) => {
-                <li key={g.goal}>
+                return(
+                    <li key={g.goal}>
                     <span>My goal is to {g.goal}, by {g.by}</span>
                 </li>
+                )
             })}
         </ul>
-    )
-}
+    );
+};
 
 
 export const ProgressGoals = () => {
 
     const [allGoals, updateAllGoals] = useState([]);
 
-    function addGoal(goal) {
-        return updateAllGoals([...allGoals, goal]);
-    }
+    function addGoal(goal) { updateAllGoals([...allGoals, goal]); }
 
     return (
         <div className='ProgressGoals'>
             <GoalForm onAdd={addGoal} />
             <ListOfGoals allGoals={allGoals} />
         </div>
-    )
-}
+    );
+};
