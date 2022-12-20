@@ -1,6 +1,7 @@
 import './App.css';
 import Switch from './Switch';
 import { ThemeProvider, useTheme } from './components/ThemeContext';
+import Test from './Test'; 
 // import Appp from './components/aaaa';
 // import DessertList from './components/DessertList';
 // import { FeedbackForm } from './components/FeedbackForm';
@@ -101,8 +102,10 @@ function App() {
         backgroundColor: theme === "light" ? "white" : "black",
       }}
     >
-      <Header />
-      <Page />
+      {/* <Header />
+      <Page /> */}
+      <Test />
+
     </div>
   );
 }
