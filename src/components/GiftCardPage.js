@@ -31,7 +31,7 @@ export default function GiftCardPage() {
             <p> {giftCard.instructions}</p>
             {
                 giftCard.valid && (
-                    <button onClick={spendGiftCard}>
+                    <button className="btn-sm btn-outline-success" onClick={spendGiftCard}>
                         Spend Gift Card
                     </button>
                 )

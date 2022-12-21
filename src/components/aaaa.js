@@ -31,7 +31,7 @@ export default function App() {
       </p>
       {
         giftCard.valid && (
-          <button onClick={spendGiftCard}>
+          <button className="btn btn-sm btn-danger" onClick={spendGiftCard}>
             Spend Gift Card
           </button>
         )
