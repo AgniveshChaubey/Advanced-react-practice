@@ -36,6 +36,7 @@ export default function GiftCardPage() {
                     </button>
                 )
             }
+            <h1>{window.innerWidth}</h1>
         </div>
     );
 }
