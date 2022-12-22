@@ -1,41 +1,27 @@
-import { useState } from "react";
+import React from "react";
 
-export default function App() {
-  const [giftCard, setGiftCard] = useState(
-    {
-        firstName: "Jennifer",
-        lastName: "Smith",
-        text: "Free dinner for 4 guests",
-        valid: true,
-        instructions: "To use your coupon, click the button below.",
-    }
-  );
+function App() {
+  const [user, setUser] = React.useState([]);
 
-  function spendGiftCard() {
+  const fetchData = () => {
+    fetch("https://randomuser.me/api/?results=1")
+      .then(response => response.json())
+      .then(data => setUser(data))
+  };
 
-  }
+  React.useEffect(() => {
+    fetchData();
+  }, []);
 
-  return (
-    <div style={{padding: '40px'}}>
-      <h1>
-        Gift Card Page
-      </h1>
-      <h2>
-        Customer: {giftCard.firstName} {giftCard.lastName}
-      </h2>
-      <h3>
-        {giftCard.text}
-      </h3>
-      <p>
-        {giftCard.instructions}
-      </p>
-      {
-        giftCard.valid && (
-          <button className="btn btn-sm btn-danger" onClick={spendGiftCard}>
-            Spend Gift Card
-          </button>
-        )
-      }
+  return Object.keys(user).length > 0 ? (
+    <div style={{ padding: "40px" }}>
+      <h1>Customer data</h1>
+      <h2>Name: {user.result[0].name.first}</h2>
+      <img src="{user.result[0].picture.large}" alt="Image-Liam" />
     </div>
+  ) : (
+    <h1>Data pending...</h1>
   );
 }
+
+export default App;
