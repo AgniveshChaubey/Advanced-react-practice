@@ -1,9 +1,10 @@
 import './App.css';
 import Switch from './Switch';
 import { ThemeProvider, useTheme } from './components/ThemeContext';
-import Test from './Test';
+import Test from './Tests/Test'
 import { ProgressGoals } from './components/ProgressGoals';
 import GiftCardPage from './components/GiftCardPage';
+import FetchFn from './Tests/FetchFn';
 // import Appp from './components/aaaa';
 // import DessertList from './components/DessertList';
 // import { FeedbackForm } from './components/FeedbackForm';
@@ -108,7 +109,8 @@ function App() {
       <Page /> */}
       {/* <Test /> */}
       {/* <ProgressGoals /> */}
-      <GiftCardPage />
+      {/* <GiftCardPage /> */}
+      <FetchFn />
     </div>
   );
 }
