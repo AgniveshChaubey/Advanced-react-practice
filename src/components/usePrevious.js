@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-export default function App() {
+export default function UsePrevious() {
   const [day, setDay] = useState("Monday");
   const prevDay = usePrevious(day);
   const getNextDay = () => {

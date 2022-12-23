@@ -6,6 +6,7 @@ import GiftCardPage from './components/GiftCardPage';
 import FetchFn from './Tests/FetchFn';
 import FetchFn2 from './components/FetchFn2';
 import {Test} from './Tests/Test';
+import UsePrevious from './components/usePrevious';
 // import Appp from './components/aaaa';
 // import DessertList from './components/DessertList';
 // import { FeedbackForm } from './components/FeedbackForm';
@@ -108,11 +109,12 @@ function App() {
     >
       {/* <Header />
       <Page /> */}
-      <Test />
+      {/* <Test /> */}
       {/* <ProgressGoals /> */}
       {/* <GiftCardPage /> */}
       {/* <FetchFn /> */}
-      <FetchFn2 />
+      {/* <FetchFn2 /> */}
+      <UsePrevious />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useConsoleLog } from '../useConsoleLog';
+import { useConsoleLog } from '../CustomHooks';
 
 export const Test = () => {
   const [count, setCount] = useState(0);
