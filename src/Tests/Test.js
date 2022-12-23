@@ -1,17 +1,15 @@
-import { useState } from "react"; 
- 
-export default function App() { 
-  const [greeting, setGreeting] = useState({ greet: "Hello, World" }); 
-  console.log(greeting, setGreeting); 
- 
-  function updateGreeting() { 
-    setGreeting({ ...greeting, greet: "Hello, World-Wide Web" }); 
-  } 
- 
-  return ( 
-    <div> 
-      <h1>{greeting.greet}</h1> 
-      <button onClick={updateGreeting}>Update greeting</button> 
-    </div> 
-  ); 
-} 
+import React, { useState } from 'react'
+
+export const Test = () => {
+  let [count, setCount] = useState(0);
+
+  let increment = ()=>{
+    setCount((prevCount) => prevCount+1)
+  }
+  return (
+    <div>
+      <h1>Count : {count}</h1>
+      <button onClick={increment}>Add 1</button>
+    </div>
+  )
+}

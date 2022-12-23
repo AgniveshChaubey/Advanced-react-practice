@@ -1,11 +1,11 @@
 import './App.css';
 import Switch from './Switch';
 import { ThemeProvider, useTheme } from './components/ThemeContext';
-import Test from './Tests/Test'
 import { ProgressGoals } from './components/ProgressGoals';
 import GiftCardPage from './components/GiftCardPage';
 import FetchFn from './Tests/FetchFn';
 import FetchFn2 from './components/FetchFn2';
+import {Test} from './Tests/Test';
 // import Appp from './components/aaaa';
 // import DessertList from './components/DessertList';
 // import { FeedbackForm } from './components/FeedbackForm';
@@ -108,7 +108,7 @@ function App() {
     >
       {/* <Header />
       <Page /> */}
-      {/* <Test /> */}
+      <Test />
       {/* <ProgressGoals /> */}
       {/* <GiftCardPage /> */}
       {/* <FetchFn /> */}
