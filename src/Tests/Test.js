@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
+import { useConsoleLog } from '../useConsoleLog';
 
 export const Test = () => {
-  let [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
+  useConsoleLog(count)
 
-  let increment = ()=>{
+  const increment = ()=>{
     setCount((prevCount) => prevCount+1)
   }
   return (
