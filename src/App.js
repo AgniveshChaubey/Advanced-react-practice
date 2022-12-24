@@ -7,6 +7,7 @@ import FetchFn from './Tests/FetchFn';
 import FetchFn2 from './components/FetchFn2';
 import {Test} from './Tests/Test';
 import UsePrevious from './components/usePrevious';
+import RadioGrp from './components/RadioGroup';
 // import Appp from './components/aaaa';
 // import DessertList from './components/DessertList';
 // import { FeedbackForm } from './components/FeedbackForm';
@@ -114,7 +115,8 @@ function App() {
       {/* <GiftCardPage /> */}
       {/* <FetchFn /> */}
       {/* <FetchFn2 /> */}
-      <UsePrevious />
+      {/* <UsePrevious /> */}
+      <RadioGrp />
     </div>
   );
 }
