@@ -110,13 +110,13 @@ function App() {
     >
       {/* <Header />
       <Page /> */}
-      {/* <Test /> */}
+      <Test />
       {/* <ProgressGoals /> */}
       {/* <GiftCardPage /> */}
       {/* <FetchFn /> */}
       {/* <FetchFn2 /> */}
       {/* <UsePrevious /> */}
-      <RadioGrp />
+      {/* <RadioGrp /> */}
     </div>
   );
 }

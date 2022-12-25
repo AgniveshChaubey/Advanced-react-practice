@@ -1,17 +1,31 @@
-import React, { useState } from 'react'
-import { useConsoleLog } from '../CustomHooks';
+import React from 'react'
+
+
+const Button = ({children, bgColor}) =>{
+  return <button style={{bgColor}}> {children} </button>
+} 
+
+const Alert = ({children}) =>{
+  return(
+    <>
+      <div className="Overlay"></div>
+      <div className="Alert">{children}</div>
+    </>
+  )
+}
+
+const DeleteButton= () =>{
+  return <Button bgColor='red'>Delete</Button>
+}
 
 export const Test = () => {
-  const [count, setCount] = useState(0);
-  useConsoleLog(count)
-
-  const increment = ()=>{
-    setCount((prevCount) => prevCount+1)
-  }
   return (
     <div>
-      <h1>Count : {count}</h1>
-      <button onClick={increment}>Add 1</button>
+      <header>Testing the app!</header>
+      <Alert>
+      <h4>Delete Account</h4>
+      <DeleteButton />
+      </Alert>
     </div>
   )
 }
