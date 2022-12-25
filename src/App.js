@@ -9,6 +9,7 @@ import {Test} from './Tests/Test';
 import UsePrevious from './components/usePrevious';
 import RadioGrp from './components/RadioGroup';
 import { PanelMouseTracker, PointMouseTracker } from './components/HOC';
+import { MouseTracker } from './components/MousrTracker';
 // import Appp from './components/aaaa';
 // import DessertList from './components/DessertList';
 // import { FeedbackForm } from './components/FeedbackForm';
@@ -120,6 +121,7 @@ function App() {
       {/* <RadioGrp /> */}
       <PanelMouseTracker />
       <PointMouseTracker />
+      <MouseTracker />
     </div>
   );
 }

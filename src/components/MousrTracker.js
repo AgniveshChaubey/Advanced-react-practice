@@ -1,4 +1,3 @@
-import "./App.css";
 import { useEffect, useState } from "react";
 
 const MousePosition = ({ render }) => {
@@ -53,7 +52,7 @@ const PointMouseLogger = () => {
   );
 };
 
-export function aa() {
+export function MouseTracker() {
   return (
     <div className="App">
       <header className="Header">Little Lemon Restaurant 🍕</header>
