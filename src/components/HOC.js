@@ -39,13 +39,13 @@ const PanelMouseLogger = ({ mousePosition }) => {
 };
 
 
-const PointMouseLogger = ({ mousePointer }) => {
-    if (!mousePointer) {
+const PointMouseLogger = ({ mousePosition }) => {
+    if (!mousePosition) {
         return null;
     }
     return (
         <p>
-            ({mousePointer.x}, {mousePointer.y})
+            ({mousePosition.x}, {mousePosition.y})
         </p>
     );
 };
