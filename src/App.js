@@ -10,6 +10,7 @@ import UsePrevious from './components/usePrevious';
 import RadioGrp from './components/RadioGroup';
 import { PanelMouseTracker, PointMouseTracker } from './components/HOC';
 import { MouseTracker } from './components/MousrTracker';
+import { FeedbackForm } from './components/FeedbackForm';
 // import Appp from './components/aaaa';
 // import DessertList from './components/DessertList';
 // import { FeedbackForm } from './components/FeedbackForm';
@@ -119,9 +120,10 @@ function App() {
       {/* <FetchFn2 /> */}
       {/* <UsePrevious /> */}
       {/* <RadioGrp /> */}
-      <PanelMouseTracker />
-      <PointMouseTracker />
-      <MouseTracker />
+      {/* <PanelMouseTracker /> */}
+      {/* <PointMouseTracker /> */}
+      {/* <MouseTracker /> */}
+      <FeedbackForm />
     </div>
   );
 }
@@ -142,7 +144,7 @@ export default Root;
 //       {/* <DessertList data={data} /> */}
 //       {/* <Form /> */}
       // {/* <FeedbackForm /> */}
-//       {/* <RegistrationForm /> */}
+      //  <RegistrationForm />
 //       <ThemeProvider />
 //     </>
 //   );
