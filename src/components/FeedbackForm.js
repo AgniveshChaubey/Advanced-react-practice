@@ -17,9 +17,14 @@ export const FeedbackForm = () => {
             setScore('10');
         }
 
+        const formStyle ={
+            textAlign : 'center',
+            backgroundColor : 'lightGreen'
+        }
+
         return (
             <div>
-                <form onSubmit={handleSubmit}>
+                <form className='form' style={formStyle} onSubmit={handleSubmit}>
                     <fieldset>
                         <h2>Feedback Form</h2>
                         <div className='field'>
