@@ -122,8 +122,8 @@ function App() {
       {/* <RadioGrp /> */}
       {/* <PanelMouseTracker /> */}
       {/* <PointMouseTracker /> */}
-      {/* <MouseTracker /> */}
-      <FeedbackForm />
+      <MouseTracker />
+      {/* <FeedbackForm /> */}
     </div>
   );
 }

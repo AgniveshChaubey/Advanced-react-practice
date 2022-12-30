@@ -1,14 +1,12 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import App from './App';
+import { FeedbackForm } from './components/FeedbackForm';
 
 test('renders learn react link', () => {
   render(<App />);
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
-
-import { fireEvent, render, screen } from "@testing-library/react";
-import FeedbackForm from "./FeedbackForm";
 
 describe("Feedback Form", () => {
   test("User is able to submit the form if the score is lower than 5 and additional feedback is provided", () => {

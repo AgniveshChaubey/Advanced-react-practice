@@ -52,9 +52,14 @@ const PointMouseLogger = () => {
   );
 };
 
+const styles = {
+  backgroundColor : 'skyblue',
+  color : 'black'
+}
+
 export function MouseTracker() {
   return (
-    <div className="App">
+    <div className="App" style={styles}>
       <header className="Header">Little Lemon Restaurant 🍕</header>
       <PanelMouseLogger />
       <PointMouseLogger />
