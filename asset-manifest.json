@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Advanced-react-practice/static/css/main.d297b3af.css",
+    "main.js": "/Advanced-react-practice/static/js/main.52dd3e4c.js",
+    "static/js/787.2e1126e5.chunk.js": "/Advanced-react-practice/static/js/787.2e1126e5.chunk.js",
+    "index.html": "/Advanced-react-practice/index.html",
+    "main.d297b3af.css.map": "/Advanced-react-practice/static/css/main.d297b3af.css.map",
+    "main.52dd3e4c.js.map": "/Advanced-react-practice/static/js/main.52dd3e4c.js.map",
+    "787.2e1126e5.chunk.js.map": "/Advanced-react-practice/static/js/787.2e1126e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d297b3af.css",
+    "static/js/main.52dd3e4c.js"
+  ]
+}
